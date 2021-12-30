@@ -1,0 +1,38 @@
+@import "./includes/pages";
+@import "./includes/menu";
+@import "./includes/header";
+@import "./includes/footer";
+@import "./includes/home";
+@import "./includes/services";
+@import "./includes/form";
+@import "./includes/hours";
+@import "./includes/contact";
+@import "./includes/products";
+@import "./includes/about";
+@import "./includes/gallery";
+
+* {
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  .nameTag {
+    font-family: cursive;
+    display: flex;
+    text-align: center;
+
+    h1 {
+      padding: 15px;
+    }
+
+    .lines {
+      height: 1.1px;
+      background-color: #7f5e32;
+      flex-grow: 1;
+      align-self: center;
+    }
+  }
+}

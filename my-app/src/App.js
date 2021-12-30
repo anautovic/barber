@@ -24,6 +24,14 @@ import OrderListScreen from './screens/OrderListScreen'
 import GallerieScreen from './screens/GalleryScreen'
 import FormationScreen from './screens/FormationScreen'
 import ServicePatchouliCoif from './screens/ServicePatchouliCoif'
+import {Home} from './components/home'
+import { Hours } from "./components/hours.js";
+import { Contact } from "./components/contact.js";
+import { Form } from "./components/form.js";
+//import { Services } from "./components/services.js";
+import { About } from "./components/about.js";
+import { Products } from "./components/products.js";
+//import "./styles/scss/style.scss";
 //import NotFoundPage from './screens/NotFoundPage'
 function App() {
   return (
@@ -33,7 +41,13 @@ function App() {
   
     
     
-    <Route path="/" component= {Accueil}  exact />
+    <Route path="/" component= {Home}  exact />
+    <Route exact path="/hours" component={Hours} />
+    <Route exact path="/products" component={Products} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/form" component={Form} />
+          {/*<Route exact path="/services" component={Services} />*/}
+          <Route exact path="/about" component={About} />
     <Route path="/services" component= {ServicePatchouli}  exact />
     <Route path="/services_coiffure" component= {ServicePatchouliCoif}  exact />
     <Route path="/maboutique" component= {HomeScreen}  exact />

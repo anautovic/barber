@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import styled from 'styled-components'
 import Imageaccueil from '../images/accueil_pat1.webp'
 import Imageaccueils from '../images/accueil_pat.webp'
-import Services from '../components/Services'
+//import Services from '../components/Services'
 import Aos from 'aos'
 import 'aos/dist/aos.css';
 
@@ -63,7 +63,7 @@ useEffect(() =>{
                     </div>
                     </div>
                 </div>
-                <Services />
+                {/*<Services />*/}
  
  
        </> 

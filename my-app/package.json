@@ -25,6 +25,7 @@
     "redux": "^4.0.5",
     "redux-devtools-extension": "^2.13.8",
     "redux-thunk": "^2.3.0",
+    "sass": "file:..",
     "styled-components": "^5.2.3",
     "web-vitals": "^0.2.4"
   },

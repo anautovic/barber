@@ -1,0 +1,88 @@
+.about {
+  background-image: url("../../../images/bg5.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.about .headerinfo .sergey {
+  width: 90px;
+  height: 120px;
+}
+.about .headerinfo .nick {
+  width: 90px;
+  height: 120px;
+}
+.about .headerinfo .lines {
+  margin: 0 30px;
+  flex-grow: 1;
+  overflow: hidden;
+  height: 50px;
+}
+.about .headerinfo #name-sergey {
+  font-size: 5em;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-right: 20px;
+}
+.about .headerinfo #name-nick {
+  font-size: 5em;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.about .info {
+  text-align: left;
+}
+.about .full-name {
+  color: #ffdb96;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  font-weight: bolder;
+}
+.about .born {
+  color: #ffdb96;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  font-weight: bolder;
+}
+.about .bio {
+  color: #ffdb96;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  font-weight: bolder;
+}
+.about .buttons {
+  margin-top: 40px;
+  text-align: center;
+}
+.about .buttons .btn1 {
+  background-color: #96230f;
+  border-radius: 14px;
+  border: none;
+  width: 120px;
+  height: 35px;
+  margin: 25px;
+  text-shadow: 3px 3px 3px #000;
+  font-style: italic;
+}
+.about .buttons .btn2 {
+  background-color: #e05620;
+  border-radius: 14px;
+  border: none;
+  width: 120px;
+  height: 35px;
+  text-shadow: 3px 3px 3px #000;
+  font-style: italic;
+}
+.about .buttons .btn3 {
+  background-color: #96230f;
+  border-radius: 14px;
+  border: none;
+  width: 120px;
+  height: 35px;
+  margin: 25px;
+  text-shadow: 3px 3px 3px #000;
+  font-style: italic;
+}
+@media (max-width: 768px) {
+  .about .headerinfo #name-sergey, .about .headerinfo #name-nick {
+    font-size: 46px;
+    margin: 5px;
+ }
+}

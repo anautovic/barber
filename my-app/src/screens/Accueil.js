@@ -5,6 +5,7 @@ import  NavbarS from '../components/NavbarS'
 import HeroS from '../components/HeroS'
 import Meta from '../components/Meta_Acc'
 import Reviews from '../components/Reviews'
+//import {Headers} from '../components/headers'
 
 //import Reviews from '../components/Reviews'
 /*const Navbar = lazy(() =>import ('../components/Navbar'));
@@ -23,10 +24,11 @@ const Accueil = () => {
    }, [])
     return (
         <>
-        <NavbarS  />
+        {/*<Headers />*/}
+        {/*<NavbarS  />
         <Meta />
         <HeroS />
-        <Reviews />
+        <Reviews />*/}
         
         </>
     )

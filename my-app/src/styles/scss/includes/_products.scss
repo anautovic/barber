@@ -1,0 +1,54 @@
+.products {
+  text-align: center;
+  background-image: url("../../../images/bg4.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  .name {
+    color: yellow;
+    margin: 20px 0;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  .description {
+    text-align: left;
+  }
+
+  .text {
+    text-align: left;
+    margin: 25px;
+  }
+
+  .btn1 {
+    background-color: rgb(150, 35, 15);
+    border-radius: 14px;
+    border: none;
+    width: 120px;
+    height: 35px;
+    margin: 25px;
+    text-shadow: 3px 3px 3px #000;
+    font-style: italic;
+  }
+
+  .btn2 {
+    background-color: rgb(224, 86, 32);
+    border-radius: 14px;
+    border: none;
+    width: 120px;
+    height: 35px;
+    margin: 25px;
+    text-shadow: 3px 3px 3px #000;
+    font-style: italic;
+  }
+  .btn3 {
+    background-color: rgb(150, 35, 15);
+    border-radius: 14px;
+    border: none;
+    width: 120px;
+    height: 35px;
+    margin: 25px;
+    text-shadow: 3px 3px 3px #000;
+    font-style: italic;
+  }
+}

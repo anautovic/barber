@@ -1,180 +1,73 @@
-import React, {useEffect} from 'react'
-import styled from 'styled-components';
-import {FaUserGraduate} from 'react-icons/fa';
-import {GiHairStrands} from 'react-icons/gi';
-import {BiFace} from 'react-icons/bi';
-import Aos from "aos"
-import "aos/dist/aos.css"
-import { Link } from 'react-router-dom';
+import React from "react";
+import { useHistory } from "react-router-dom";
+import { Header } from "./header";
+//import { Footer } from "./footer";
 
+export const Services = () => {
+  const history = useHistory();
 
+  function handleClick() {
+    history.push("/form");
+  }
 
-
-
-const Underline = styled.div`
-height: 0.25rem;
-width: 5rem;
-background: #CD853F;
-margin-left: auto;
-margin-right: auto;
-`;
-
-
- const WorksCardContent = styled.div`
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-top: 5rem;
-@media only screen and (max-width:900px){
-    flex-direction: column;
-}
-`;
-
- const WorksCard = styled(Link)`
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-width: 18rem;
-height: 30rem;
-text-decoration: none;
-background-color: #fff;
-box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.19);
-border-radius: 20px;
-&:hover{
-    text-decoration:none;
-}
-transition: all .5s ease;
-&:not(:last-child) {
-    margin-right: 5rem;
-    @media only screen and (min-width: 1300px){
-        margin-right: 5rem;
-        width:15rem;
-    }
-    @media only screen and (min-width: 1500px){
-        margin-right: 5rem;
-        width:15rem;
-    }
-    @media only screen and (max-width:900px){
-        margin-bottom: 10rem;
-        margin-right: 0;
-        width:15rem;
-    }
-    @media only screen and (max-width: 800px){
-        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.12);
-       
-    }
-}
-@media only screen and (max-width:900px){
-        width: 15rem;
-}
-@media only screen and (max-width:500px){
-        width: 15rem;
-}
-@media only screen and (min-width:1890px){
-        width: 25rem;
-}
-&:hover {
-    box-shadow:  0px 10px 45px rgba(0, 0, 0, 0.21);
-    transform: scale(1.05);
-    background-color: #E38B06;
-    color: #fff;
-    
-}
-`;
-
- const WorksIconContainer = styled.div`
-width: 8rem;
-height: 8rem;
-border-radius: 50%;
-border: 2px solid #333;
-transition: all .3s ease-out;
-margin-top: 2rem;
-display: flex;
-justify-content: center;
-align-items: center;
-`;
- const WorksIcon1 = styled(FaUserGraduate)`
-color: #333;
-font-size: 5rem;
-`;
-
- const WorksIcon2 = styled(BiFace)`
-color: #333;
-font-size: 5rem;
-`;
- const WorksIcon3 = styled(GiHairStrands)`
-color: #333;
-font-size: 5rem;
-`;
-
- const WorksCardTitle = styled.h3`
-font-size: 1.5rem;
-font-weight: bold;
-padding-top: 1rem;
-`;
-
- const WorksCardText = styled.p`
-font-size: 1rem;
-padding: 1rem 1.5rem;
-`;
-const Services = () => {
-
-            useEffect(()=>{
-        Aos.init({duration: 3000});
-      }, []);
-      //const [readMore, setReadMore] = useState(true);
-    return (
-        <>
-        <div  >
-        <h3 className='text-justify text-center '
-            data-aos= "fade-down"> Nos services</h3>
-            <Underline />
-            
-
-
-        <div className= "container-fluid">
-                    
-                    <WorksCardContent data-aos="fade-down">
-                        <WorksCard to= '/formation'>
-                            <WorksIconContainer>
-                                <WorksIcon1 className="Icon"/>
-                            </WorksIconContainer>
-                            <WorksCardTitle>Formation</WorksCardTitle>
-                            <WorksCardText>
-                            L’Institut de beauté patchouli est un centre de formation professionnel offrant des formations 
-        dans: onglerie, make-up, coiffure mixte, cosmétiques, esthétiques...
-        
-                            </WorksCardText>
-                        </WorksCard>
-                        <WorksCard  to= '/services'>
-                            <WorksIconContainer>
-                                <WorksIcon2/>
-                            </WorksIconContainer>
-                            <WorksCardTitle>Esthetique</WorksCardTitle>
-                            <WorksCardText>
-                           Nous faisons des prestations en  soins spécifiques, soins de visage,  soins de corps,
-massage, onglerie, épilation, et Maquillage
-                             
-                            </WorksCardText>
-                        </WorksCard>
-                        <WorksCard to= '/services_coiffure'>
-                            <WorksIconContainer>
-                                <WorksIcon3/>
-                            </WorksIconContainer>
-                            <WorksCardTitle>Prestation en Coiffure</WorksCardTitle>
-                            <WorksCardText>
-                            Céramique, Teinture, Pose pérruque Shampoing, Coiffure, Défrisage,Rasta, Nattes, 
-                            </WorksCardText>
-                        </WorksCard>
-                    </WorksCardContent>
-                
-
-            </div>
+  return (
+    <div className="services page">
+      <Header />
+      <div className="nameTag">
+        <div className="lines"></div>
+        <h1>Nos prestations</h1>
+        <div className="lines"></div>
+      </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-1 col-md-1 col-sm-1 number">01.</div>
+          <div className="col-lg-6 col-md-6 col-sm-10 haircut">
+            <h2 className="nameOfServise">HAIR CUT</h2>
+            <h6 className="includes">INCLUDES</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+              veritatis cupiditate. Eaque explicabo vel excepturi assumenda
+              numquam voluptate tempora alias?
+            </p>
+          </div>
+          <div className="col-lg-4 col-md-4 hidden-sm hidden-xs line"></div>
+          <div className="col-lg-1 col-md-1 col-sm-1 number"> 17€</div>
         </div>
-
-    </>
-    )
-}
-
- export default Services
+        <div className="row">
+          <div className="col-lg-1 col-md-1 col-sm-1 number">02.</div>
+          <div className="col-lg-6 col-md-6 col-sm-10 haircut">
+            <h2 className="nameOfServise">PACKAGE TATOUAGE</h2>
+            <h6 className="includes">INCLUDES</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+              veritatis cupiditate. Eaque explicabo vel excepturi assumenda
+              numquam voluptate tempora alias?
+            </p>
+          </div>
+          <div className="col-lg-4 col-md-4 hidden-sm hidden-xs line"></div>
+          <div className="col-lg-1 col-md-1 col-sm-1 number">30 €</div>
+        </div>
+        <div className="row">
+          <div className="col-lg-1 col-md-1 col-sm-1 number">01.</div>
+          <div className="col-lg-6 col-md-6 hidden-sm hidden-xs haircut">
+            <h2 className="nameOfServise">PACKAGE NO BORODA </h2>
+            <h6 className="includes">INCLUDES</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
+              veritatis cupiditate. Eaque explicabo vel excepturi assumenda
+              numquam voluptate tempora alias?
+            </p>
+          </div>
+          <div className="col-lg-4 col-md-4 col-sm-0 line"></div>
+          <div className="col-lg-1 col-md-1 col-sm-1 number">37 €</div>
+        </div>
+        <div className="reserve">
+          <button className="reserve-btn" type="button" onClick={handleClick}>
+            Reserve Now
+          </button>
+        </div>
+      </div>
+      {/*<Footer />*/}
+    </div>
+  );
+};
